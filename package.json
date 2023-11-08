@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "cypress": "^13.4.0"
+  },
+  "dependencies": {
+    "faker": "^2.1.3"
+  }
+}
