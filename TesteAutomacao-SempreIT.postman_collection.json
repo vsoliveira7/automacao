@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "7683f2b5-52d2-43f6-b8e2-18c9b15d3924",
+		"name": "TesteAutomacao-SempreIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19529550"
+	},
+	"item": [
+		{
+			"name": "Autenticação_API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Vinicius\",\r\n   \"clientEmail\": \"Vinicius@teste.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/api-clients/",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api-clients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EnviarPedido_API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3591127edcf54af981829ec1982c79bbc31fb3300b44cd30c1fbb3154fe74f70",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"John\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/orders",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReceberTodosPedidos_API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3591127edcf54af981829ec1982c79bbc31fb3300b44cd30c1fbb3154fe74f70",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/orders/",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReceberUnicoPedido_API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3591127edcf54af981829ec1982c79bbc31fb3300b44cd30c1fbb3154fe74f70",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/orders/mwsfyp6VnFzQRJGuR8gCS",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"orders",
+						"mwsfyp6VnFzQRJGuR8gCS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarPedido_API",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3591127edcf54af981829ec1982c79bbc31fb3300b44cd30c1fbb3154fe74f70",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Gabriel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/orders/mwsfyp6VnFzQRJGuR8gCS",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"orders",
+						"mwsfyp6VnFzQRJGuR8gCS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://simple-books-api.glitch.me/orders/fjFiI-2GnmjoU2E-vrU5u",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3591127edcf54af981829ec1982c79bbc31fb3300b44cd30c1fbb3154fe74f70",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/orders/mwsfyp6VnFzQRJGuR8gCS",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"orders",
+						"mwsfyp6VnFzQRJGuR8gCS"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
